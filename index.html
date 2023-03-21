@@ -8,45 +8,40 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<!-- ENCABEZADOS  (APERTURA Y CIERRE / BLOQUE)-->
-		<h1>Hola</h1>
-		<h2>Hola</h2>
-		<h3>Hola</h3>
-		<h4>Hola</h4>
-		<h5>Hola</h5>
-		<h6>Hola</h6>
+		<!-- FORMULARIOS -->
+		<h1>FORMULARIOS HTML</h1>
 
-		<!-- PARRAFOS (APERTURA Y CIERRE / BLOQUE) -->
-		<p>Soy un parrafo</p>
+		<!-- Todo formulario va empaquetado o tiene como padre la etiqueta FORM -->
+		<!-- MANERAS DE ENVIAR FORMULARIO -->
 
-		<!-- ESTRUCTURA -->
-		<div>Hola soy un div</div>
-		<span>HOla soy un span</span>
+		<form action="messageSubmit.html">
+			<div>
+				<label for="name">Ingrese su nombre:</label>
+				<input id="name" type="text" placeholder="Diego" />
+			</div>
 
-		<!-- HTML 5 - SEMANTICA -->
+			<div>
+				<label for="lastName">Ingrese su apellido:</label>
+				<input id="lastName" type="text" placeholder="Cueva" />
+			</div>
 
-		<header>Soy el heaer</header>
-		<footer>Soy el footer</footer>
-		<main>Soy el main</main>
-		<section>Soy un el section</section>
-		<article>Soy el article</article>
-		<aside>SOy el aside</aside>
+			<div>
+				<label for="developer">Ingrese su email:</label>
+				<input id="developer" type="email" placeholder="diego@gmail.com" />
+			</div>
 
-		<!-- MAQUETANDO UNA SECTION DE PERIODICO -->
-		<section>
-			<header>
-				<h2>Soy el encabezado de la section</h2>
-			</header>
+			<div>
+				<label for="developer">Ingrese su profesion:</label>
+				<input id="developer" type="text" placeholder="Job" />
+			</div>
 
-			<main>
-				<h2>Soy el contenido Principal</h2>
-			</main>
+			<!-- <div>
+				<button type="submit">ENVIAR</button>
+			</div> -->
 
-			<footer>
-				<p>Soy el footer</p>
-			</footer>
-		</section>
-
-		<!-- FIN MAQUETACION -->
+			<div>
+				<input type="submit" value="ENVIAR" />
+			</div>
+		</form>
 	</body>
 </html>
